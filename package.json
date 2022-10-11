@@ -40,7 +40,7 @@
     }
   },
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --config pageLoadTimeout=10000",
     
     "html:report": "node cucumber-html-reports.js"
   },
