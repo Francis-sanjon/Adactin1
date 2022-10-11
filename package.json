@@ -40,7 +40,8 @@
     }
   },
   "scripts": {
-    "test": "cypress run --reporter mochawesome",
+    "test": "cypress run",
+    
     "html:report": "node cucumber-html-reports.js"
   },
   "name": "adactin",
