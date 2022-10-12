@@ -4,6 +4,7 @@
 FROM cypress/included:10.9.0
 #Create the folder where our project will be stored
 RUN mkdir /my-cypress-project1
+xvfb \
 #We make it our workdirectory
 WORKDIR /my-cypress-project1
 #Let's copy the essential files that we MUST use to run our scripts.
