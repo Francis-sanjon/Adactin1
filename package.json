@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "cypress": "^10.7.0",
-    "mochawesome-report-generator": "^6.2.0"
+    "mochawesome-report-generator": "^6.2.0",
+    "xvfb": "^0.4.0"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^12.2.0",
@@ -41,7 +42,6 @@
   },
   "scripts": {
     "test": "cypress run --config pageLoadTimeout=10000",
-    
     "html:report": "node cucumber-html-reports.js"
   },
   "name": "adactin",
