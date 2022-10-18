@@ -3,8 +3,9 @@
 #FROM cypress/base:12.1.0
 FROM cypress/included:10.9.0
 #Create the folder where our project will be stored
-RUN mkdir /my-cypress-project1
 RUN apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+RUN mkdir /my-cypress-project1
+#RUN apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
 #RUN mkdir /my-cypress-project1 && \
 #xvfb \
 #We make it our workdirectory
